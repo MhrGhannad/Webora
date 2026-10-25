@@ -1,0 +1,60 @@
+@font-face {
+            font-family: Vazir;
+            src: 
+                url('/font/vazir/Vazir.woff') format('woff'),
+                url('/font/vazir/Vazir.woff2') format('woff2');
+        }
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family:'vazir';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow:hidden;
+    margin: 0;
+}
+.contioner{
+    display: flex;
+    width: 90vw;
+
+}
+.panel{
+    background-repeat: no-repeat;
+    height: 80vh;
+    border-radius: 50px;
+    margin: 10px;
+    color: white;
+    cursor: pointer;
+    flex: 0.5;
+    position: relative;
+    transition: flex 0.7s ease-in ;
+
+}
+
+.panel h3 {
+    position: absolute;
+    font-size:23px;
+    bottom: 20px;
+    left: 20px;
+    margin: 0px;
+    opacity: 0;
+}
+
+.panel.active{
+    flex: 5;
+}
+.panel.active h3 {
+    opacity: 1;
+}
+
+@media (max-width : 480px) {
+
+    .panel:nth-of-type(4),
+    .panel:nth-of-type(5){
+        display: none;
+    }
+}
