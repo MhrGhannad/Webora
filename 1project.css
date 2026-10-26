@@ -1,8 +1,8 @@
 @font-face {
             font-family: Vazir;
             src: 
-                url('/font/vazir/Vazir.woff') format('woff'),
-                url('/font/vazir/Vazir.woff2') format('woff2');
+                url('./Vazir.woff') format('woff'),
+                url('./Vazir.woff2') format('woff2');
         }
 *{
     box-sizing: border-box;
